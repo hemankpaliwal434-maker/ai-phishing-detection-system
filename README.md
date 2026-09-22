@@ -132,7 +132,7 @@ npm install
 npm run dev
 ```
 The frontend application will be running at:  
-👉 **http://localhost:5173**
+👉 **http://localhost:3000**
 
 ---
 
