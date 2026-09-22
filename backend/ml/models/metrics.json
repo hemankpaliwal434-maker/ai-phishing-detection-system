@@ -1,0 +1,112 @@
+{
+  "best_model": "Gradient Boosting",
+  "feature_names": [
+    "url_length",
+    "hostname_length",
+    "path_length",
+    "query_length",
+    "count_dots",
+    "count_hyphens",
+    "count_at",
+    "count_question",
+    "count_percent",
+    "count_equal",
+    "count_underscore",
+    "count_slash",
+    "count_digits",
+    "digit_ratio",
+    "count_subdomains",
+    "has_ip_address",
+    "is_https",
+    "has_suspicious_keyword",
+    "suspicious_keyword_count",
+    "is_shortened",
+    "has_custom_port",
+    "entropy",
+    "has_homoglyphs",
+    "has_double_slash_redirect",
+    "tld_in_subdomain",
+    "brand_in_subdomain",
+    "is_suspicious_tld",
+    "has_hex_encoding",
+    "has_base64"
+  ],
+  "feature_importances": {
+    "suspicious_keyword_count": 83.58,
+    "path_length": 15.34,
+    "is_suspicious_tld": 0.7,
+    "hostname_length": 0.34,
+    "count_hyphens": 0.03,
+    "entropy": 0.0,
+    "is_https": 0.0,
+    "count_dots": 0.0,
+    "url_length": 0.0,
+    "count_equal": 0.0,
+    "is_shortened": 0.0,
+    "digit_ratio": 0.0,
+    "count_question": 0.0,
+    "tld_in_subdomain": 0.0,
+    "has_suspicious_keyword": 0.0,
+    "count_slash": 0.0,
+    "has_homoglyphs": 0.0,
+    "brand_in_subdomain": 0.0,
+    "has_hex_encoding": 0.0,
+    "has_custom_port": 0.0,
+    "has_double_slash_redirect": 0.0,
+    "count_at": 0.0,
+    "has_ip_address": 0.0,
+    "count_digits": 0.0,
+    "count_underscore": 0.0,
+    "query_length": 0.0,
+    "count_percent": 0.0,
+    "has_base64": -0.0,
+    "count_subdomains": -0.0
+  },
+  "models_benchmark": {
+    "Random Forest": {
+      "accuracy": 99.84,
+      "precision": 100.0,
+      "recall": 99.68,
+      "f1_score": 99.84,
+      "roc_auc": 100.0,
+      "confusion_matrix": {
+        "true_negative": 310,
+        "false_positive": 0,
+        "false_negative": 1,
+        "true_positive": 307
+      }
+    },
+    "Gradient Boosting": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "roc_auc": 100.0,
+      "confusion_matrix": {
+        "true_negative": 310,
+        "false_positive": 0,
+        "false_negative": 0,
+        "true_positive": 308
+      }
+    },
+    "Logistic Regression": {
+      "accuracy": 99.84,
+      "precision": 100.0,
+      "recall": 99.68,
+      "f1_score": 99.84,
+      "roc_auc": 100.0,
+      "confusion_matrix": {
+        "true_negative": 310,
+        "false_positive": 0,
+        "false_negative": 1,
+        "true_positive": 307
+      }
+    }
+  },
+  "dataset_summary": {
+    "total_samples": 2470,
+    "train_samples": 1852,
+    "test_samples": 618,
+    "feature_count": 29
+  }
+}
